@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <!-- todo form -->
+      <app-todo-form (emmitTodo)="getTodos($event)"></app-todo-form>
+    </div>
+    <div class="col-md-6">
+      <!-- todo list  -->
+      <app-todo-list [gettodoArray]="todoArray"></app-todo-list>
+    </div>
+  </div>
+</div>
